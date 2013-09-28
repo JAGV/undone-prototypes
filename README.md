@@ -18,4 +18,4 @@ This is a collection of experiments and resources to explore some of the propose
 - [Looks sort of bad...](http://www.cincopa.com/media-platform/wordpress-plugin/audio-player)
 - We could work with an already ajaxed theme and stick a player in the navigation in the header.[This one is pretty dope](http://iworks.ozythemes.com/#!/home-page) but it’s also $45. I think it might be the user-experience Jack is looking for. Would be a pretty rad way to experience a music blog.
 - This is also pretty sick. This guy just Ajaxed the Twenty-twelve theme. [See here](http://themes.wptheming.com/ajax-demo/)
-- There’s also a plugin called [Ajaxed WordPress](http://ajaxedwp.com/). Loads simple WP Pages with Ajax.
+- There’s also a plugin called [Ajaxed WordPress](http://ajaxedwp.com/). Loads simple WP Pages and Posts with Ajax. We can just give the player a fixed position.
