@@ -16,6 +16,7 @@ This is a collection of experiments and resources to explore some of the propose
 - [Flash music player](http://wpaudioplayer.com/)
 - [Looks sort of bad...](http://www.cincopa.com/media-platform/wordpress-plugin/audio-player)
 - I really like [jPlayer](http://jplayer.org/). I used it for the Drum & Bell Tower site I did a few years back. It’s great because it’s fully customizable. I think it just reads an unordered list and if fully customizable in CSS. There’s a WP plugin for it too [http://wordpress.org/plugins/mp3-jplayer/](http://wordpress.org/plugins/mp3-jplayer/)
+- This is a pretty dope responsive playlist player based on jPlayer. [Wolf Player](http://wpwolf.com/plugin/wolf-jplayer/). Looks fully customizable and is responsive and has some pretty slick animation already built in.
 
 #### Ajax WordPress Stuff
 

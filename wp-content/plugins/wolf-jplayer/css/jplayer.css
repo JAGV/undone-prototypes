@@ -1,0 +1,597 @@
+/*   Container, Logo
+--------------------------------------------------*/
+#wolf-jplayer-single-page {
+  margin: 1em auto;
+  max-width: 800px;
+}
+
+.wolf-jplayer-playlist.js {
+  display: none;
+}
+
+/*   Icons
+--------------------------------------------------*/
+/**
+Thanks to ICOMOON 
+http://icomoon.io
+ */
+@font-face {
+  font-family: 'WolfjPlayer';
+  src: url("fonts/WolfjPlayer.eot");
+  src: url("fonts/WolfjPlayer.eot?#iefix") format("embedded-opentype"), url("fonts/WolfjPlayer.svg#WolfjPlayer") format("svg"), url("fonts/WolfjPlayer.woff") format("woff"), url("fonts/WolfjPlayer.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wolf-jplayer-icon, .wolf-jplayer-playlist .wolf-jp-overlay #wolf-jplayer-facebook-button, .wolf-jplayer-playlist .wolf-jp-overlay #wolf-jplayer-twitter-button, .wolf-jplayer-playlist div.jp-audio .jp-repeat, .wolf-jplayer-playlist div.jp-audio .jp-repeat-off, .wolf-jplayer-playlist div.jp-audio .jp-shuffle, .wolf-jplayer-playlist div.jp-audio .jp-shuffle-off, .wolf-jplayer-playlist div.jp-audio .wolf-jp-share-icon, .wolf-jplayer-playlist div.jp-audio .wolf-jp-popup, .wolf-jplayer-playlist .wolf-jp-song-url .itunes, .wolf-jplayer-playlist .wolf-jp-song-url .amazon, .wolf-jplayer-playlist .wolf-jp-song-url .buy, .wolf-jplayer-playlist .wolf-jp-song-url .free-dl, .wolf-jplayer-playlist div.jp-type-playlist .jp-play, .wolf-jplayer-playlist div.jp-type-playlist .jp-pause, .wolf-jplayer-playlist div.jp-type-playlist .jp-previous, .wolf-jplayer-playlist div.jp-type-playlist .jp-next, .wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-mute, .wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-unmute, .wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-volume-max {
+  font-family: 'WolfjPlayer';
+  speak: none;
+  font-style: normal;
+  text-decoration: none !important;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wolf-jplayer-playlist .wolf-jp-overlay #wolf-jplayer-facebook-button {
+  font-size: 24px;
+  color: #3b5997;
+  margin: 0 2px;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay #wolf-jplayer-facebook-button:before {
+  content: "\e019";
+}
+.wolf-jplayer-playlist .wolf-jp-overlay #wolf-jplayer-twitter-button {
+  font-size: 24px;
+  color: #41b7d8;
+  margin: 0 2px;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay #wolf-jplayer-twitter-button:before {
+  content: "\e01a";
+}
+.wolf-jplayer-playlist div.jp-audio .jp-repeat, .wolf-jplayer-playlist div.jp-audio .jp-repeat-off, .wolf-jplayer-playlist div.jp-audio .jp-shuffle, .wolf-jplayer-playlist div.jp-audio .jp-shuffle-off, .wolf-jplayer-playlist div.jp-audio .wolf-jp-share-icon, .wolf-jplayer-playlist div.jp-audio .wolf-jp-popup {
+  position: absolute;
+  z-index: 10;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  top: 10px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+.wolf-jplayer-playlist div.jp-audio .jp-repeat:hover, .wolf-jplayer-playlist div.jp-audio .jp-repeat-off:hover, .wolf-jplayer-playlist div.jp-audio .jp-shuffle:hover, .wolf-jplayer-playlist div.jp-audio .jp-shuffle-off:hover, .wolf-jplayer-playlist div.jp-audio .wolf-jp-share-icon:hover, .wolf-jplayer-playlist div.jp-audio .wolf-jp-popup:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.wolf-jplayer-playlist div.jp-audio .jp-repeat-off, .wolf-jplayer-playlist div.jp-audio .jp-shuffle-off {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.wolf-jplayer-playlist div.jp-audio .wolf-jp-share-icon {
+  display: block;
+  cursor: pointer;
+  top: 35px;
+  right: 10px;
+  font-size: 14px;
+}
+.wolf-jplayer-playlist div.jp-audio .wolf-jp-share-icon:before {
+  content: "\e00f";
+}
+.wolf-jplayer-playlist div.jp-audio .jp-repeat, .wolf-jplayer-playlist div.jp-audio .jp-repeat-off {
+  right: 56px;
+}
+.wolf-jplayer-playlist div.jp-audio .jp-repeat:before, .wolf-jplayer-playlist div.jp-audio .jp-repeat-off:before {
+  content: "\e011";
+}
+.wolf-jplayer-playlist div.jp-audio .jp-shuffle, .wolf-jplayer-playlist div.jp-audio .jp-shuffle-off {
+  right: 34px;
+}
+.wolf-jplayer-playlist div.jp-audio .jp-shuffle:before, .wolf-jplayer-playlist div.jp-audio .jp-shuffle-off:before {
+  content: "\e010";
+}
+.wolf-jplayer-playlist div.jp-audio .wolf-jp-popup {
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  right: 10px;
+  font-size: 14px;
+}
+.wolf-jplayer-playlist div.jp-audio .wolf-jp-popup:before {
+  content: "\e013";
+}
+.wolf-jplayer-playlist .wolf-jp-song-url .itunes, .wolf-jplayer-playlist .wolf-jp-song-url .amazon, .wolf-jplayer-playlist .wolf-jp-song-url .buy, .wolf-jplayer-playlist .wolf-jp-song-url .free-dl {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-left: 4px;
+  font-size: 16px;
+}
+.wolf-jplayer-playlist .wolf-jp-song-url .itunes {
+  margin-top: -6px;
+}
+.wolf-jplayer-playlist .wolf-jp-song-url .itunes:before {
+  content: "\e001";
+}
+.wolf-jplayer-playlist .wolf-jp-song-url .amazon:before {
+  content: "\e000";
+}
+.wolf-jplayer-playlist .wolf-jp-song-url .buy:before {
+  content: "\e002";
+}
+.wolf-jplayer-playlist .wolf-jp-song-url .free-dl:before {
+  content: "\e018";
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-controls li a {
+  outline: none;
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-play, .wolf-jplayer-playlist div.jp-type-playlist .jp-pause, .wolf-jplayer-playlist div.jp-type-playlist .jp-previous, .wolf-jplayer-playlist div.jp-type-playlist .jp-next {
+  position: absolute;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-play:hover, .wolf-jplayer-playlist div.jp-type-playlist .jp-pause:hover, .wolf-jplayer-playlist div.jp-type-playlist .jp-previous:hover, .wolf-jplayer-playlist div.jp-type-playlist .jp-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-play {
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  top: 55px;
+  left: 146px;
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-play:before {
+  content: "\e008";
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-pause {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  top: 65px;
+  left: 152px;
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-pause:before {
+  content: "\e009";
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-previous, .wolf-jplayer-playlist div.jp-type-playlist .jp-next {
+  width: 42px;
+  height: 42px;
+  font-size: 42px;
+  top: 67px;
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-previous:active, .wolf-jplayer-playlist div.jp-type-playlist .jp-next:active {
+  top: 68px;
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-previous {
+  top: 68px;
+  left: 100px;
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-previous:before {
+  content: "\e00b";
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-next {
+  left: 205px;
+}
+.wolf-jplayer-playlist div.jp-type-playlist .jp-next:before {
+  content: "\e00c";
+}
+.wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-mute, .wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-unmute, .wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-volume-max {
+  position: absolute;
+  font-size: 16px;
+  left: 255px;
+  top: 81px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+.wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-mute:hover, .wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-unmute:hover, .wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-volume-max:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-mute:before {
+  content: "\e007";
+}
+.wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-unmute:before {
+  content: "\e003";
+}
+.wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-volume-max {
+  left: 390px;
+}
+.wolf-jplayer-playlist div.jp-interface ul.jp-controls a.jp-volume-max:before {
+  content: "\e005";
+}
+
+.wolf-jplayer-playlist {
+  width: 100%;
+  /*max-width:800px;*/
+  margin-bottom: 30px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  min-width: 200px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wolf-jplayer-playlist li:before, .wolf-jplayer-playlist li:after {
+  display: none !important;
+}
+.wolf-jplayer-playlist * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.wolf-jplayer-playlist *:after, .wolf-jplayer-playlist *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wolf-jplayer-playlist img {
+  padding: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.wolf-jplayer-playlist a {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+.wolf-jplayer-playlist ul {
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay {
+  display: none;
+  position: absolute;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 998;
+  width: 100%;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container {
+  display: table;
+  position: relative;
+  width: 90%;
+  text-align: left;
+  margin: 2% auto 0;
+  height: 90%;
+  background: white;
+  border: 1px solid grey;
+  color: #333;
+  text-shadow: none;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container .wolf-jp-share {
+  display: table-cell;
+  vertical-align: middle;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container img {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container div {
+  max-width: 300px;
+  font-size: 12px;
+  width: 100%;
+  margin: 1em auto;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container div.wolf-jp-share-socials {
+  text-align: center;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container div.wolf-jp-share-socials a {
+  text-decoration: none;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container div.wolf-jp-share-socials img {
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container .wolf-share-input {
+  display: block;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container .wolf-share-input label {
+  max-width: 70px;
+  width: 20%;
+  line-height: 24px;
+  height: 20px;
+  margin-top: 0px;
+  display: block;
+  float: left;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container .wolf-share-input div {
+  overflow: hidden;
+  padding: 0 3px;
+  height: 20px;
+  max-width: 200px;
+  width: 70%;
+  font-size: 12px;
+  background: white;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container .wolf-share-input div input {
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  line-height: 18px;
+  width: 100%;
+  padding: 0;
+  color: black;
+}
+.wolf-jplayer-playlist .wolf-jp-overlay .wolf-jp-share-container span.close-wolf-jp-share {
+  position: absolute;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  top: 3px;
+  right: 5px;
+}
+.wolf-jplayer-playlist .wolf-jp-song-url {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 15px;
+  width: 65px;
+  height: 100%;
+  z-index: 1;
+  text-align: right;
+}
+
+.wolf-jplayer-playlist .jp-jplayer {
+  height: 0;
+}
+.wolf-jplayer-playlist .jplayer_container {
+  width: 100%;
+  position: relative;
+}
+.wolf-jplayer-playlist .jplayer_container img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 65px;
+  left: 10px;
+  z-index: 99;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+.wolf-jplayer-playlist div.jp-audio {
+  position: relative;
+  font-size: 12px;
+  text-shadow: none;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0;
+}
+.wolf-jplayer-playlist div.jp-audio .jp-logo {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  top: 5px;
+  left: 5px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/*   Playlist
+--------------------------------------------------*/
+.wolf-jplayer-playlist .jp-playlist ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.wolf-jplayer-playlist .jp-title li, .wolf-jplayer-playlist .jp-playlist li {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 35px;
+  line-height: 35px;
+}
+.wolf-jplayer-playlist .jp-playlist li {
+  background: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.11);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.wolf-jplayer-playlist .jp-playlist li:last-child {
+  border-bottom: none;
+}
+.wolf-jplayer-playlist .jp-playlist li:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+.wolf-jplayer-playlist .jp-playlist li div.jp-playlist-item-remove {
+  display: none;
+}
+.wolf-jplayer-playlist .jp-playlist li:nth-child(even) {
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.wolf-jplayer-playlist .jp-playlist li:nth-child(even):hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+.wolf-jplayer-playlist .jp-playlist li a {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  margin-left: 15px;
+  font-size: 13px;
+  height: 100%;
+  text-decoration: none;
+  font-weight: 700;
+  outline: none;
+}
+.wolf-jplayer-playlist .jp-playlist li a span.jp-artist {
+  font-weight: 400;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+.wolf-jplayer-playlist .jp-playlist li.jp-playlist-current {
+  background: rgba(255, 255, 255, 0.8);
+}
+.wolf-jplayer-playlist .jp-playlist li.jp-playlist-current:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+.wolf-jplayer-playlist .jp-playlist li.jp-playlist-current a {
+  color: #333333 !important;
+}
+.wolf-jplayer-playlist .jp-playlist li.jp-playlist-current a:hover {
+  color: #333333 !important;
+}
+.wolf-jplayer-playlist .jp-playlist li.jp-playlist-current a span.jp-artist {
+  font-weight: 400;
+}
+
+/*   Controls
+--------------------------------------------------*/
+/*.wolf-jplayer-playlist div.jp-type-playlist{
+	background: #353535;
+}*/
+.wolf-jplayer-playlist div.jp-audio .jp-interface {
+  position: static;
+  position: relative;
+  width: auto;
+  padding-left: 100px;
+  height: 120px;
+  padding-top: 40px;
+}
+.wolf-jplayer-playlist div.jp-audio .jp-interface ul.jp-controls {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  height: 88px;
+}
+.wolf-jplayer-playlist div.jp-audio .jp-interface ul.jp-controls li {
+  display: inline;
+  float: left;
+}
+.wolf-jplayer-playlist div.jp-audio .jp-interface ul.jp-controls li a {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+}
+.wolf-jplayer-playlist div.jp-controls-holder {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/*   Progress bar
+--------------------------------------------------*/
+.wolf-jplayer-playlist .jp-progress, .wolf-jplayer-playlist .jp-volume-bar {
+  border: solid 1px rgba(0, 0, 0, 0.3);
+}
+.wolf-jplayer-playlist .jp-play-bar, .wolf-jplayer-playlist .jp-volume-bar-value {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.wolf-jplayer-playlist .jp-progress {
+  position: relative;
+  width: auto;
+  height: 6px;
+  margin: 0 50px 0 40px;
+  z-index: 100;
+}
+.wolf-jplayer-playlist .jp-seek-bar {
+  width: 0px;
+  height: 100%;
+  cursor: pointer;
+}
+.wolf-jplayer-playlist .jp-play-bar {
+  width: 0px;
+  height: 100%;
+  overflow: hidden;
+}
+.wolf-jplayer-playlist .jp-current-time, .wolf-jplayer-playlist .jp-duration {
+  margin-top: -9px;
+  width: 30px;
+  font-size: 11px;
+  line-height: 11px;
+}
+.wolf-jplayer-playlist .jp-current-time {
+  float: left;
+  margin-left: 4px;
+}
+.wolf-jplayer-playlist .jp-duration {
+  float: right;
+  text-align: left;
+  margin-right: 10px;
+}
+
+/*   Volume
+--------------------------------------------------*/
+.wolf-jplayer-playlist .wolf-volume {
+  display: none;
+}
+.wolf-jplayer-playlist .jp-volume-bar {
+  position: absolute;
+  width: 100px;
+  height: 6px;
+  padding: 0;
+  overflow: hidden;
+  top: 85px;
+  left: 278px;
+}
+.wolf-jplayer-playlist .jp-volume-bar:hover {
+  cursor: pointer;
+}
+.wolf-jplayer-playlist .jp-volume-bar-value {
+  height: 6px;
+}
+
+/*   No solution
+--------------------------------------------------*/
+.wolf-jplayer-playlist .jp-no-solution {
+  position: relative;
+  width: 96%;
+  z-index: 100;
+  margin: -20px 2% 0;
+  padding-bottom: 10px;
+}
+.wolf-jplayer-playlist .jp-no-solution a {
+  text-decoration: underline;
+}

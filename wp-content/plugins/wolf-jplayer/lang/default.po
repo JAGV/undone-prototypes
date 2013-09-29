@@ -1,0 +1,421 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wolf jPlayer\n"
+"POT-Creation-Date: 2013-08-28 14:23+0100\n"
+"PO-Revision-Date: 2013-08-28 14:23+0100\n"
+"Last-Translator: \n"
+"Language-Team: WP Wolf <support@wpwolf.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wolf-jplayer-playlists.php:37
+msgid "Songs count"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:38
+msgid "Name"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:39 ../inc/playlist-functions.php:39
+msgid "Logo"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:40
+msgid "Autoplay"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:41 ../wolf-jplayer-songs.php:66
+msgid "Actions"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:58
+msgid "Edit playlist name"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:59
+msgid "Upload a custom logo for your playlist"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:59
+msgid "Add a logo"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:61 ../wolf-jplayer-songs.php:85
+msgid "Yes"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:61 ../wolf-jplayer-songs.php:85
+msgid "No"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:65
+msgid "Manage songs"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:66
+msgid "Edit playlist"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:68
+msgid "Delete playlist"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:68
+msgid "Are you sure to want to delete this playlist and all songs in it ?"
+msgstr ""
+
+#: ../wolf-jplayer-playlists.php:78
+msgid "No playlist yet, create you first playlist using the form above!"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:27
+msgid "Buy on iTunes"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:28
+msgid "Buy on amazon"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:29
+msgid "Buy now"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:30
+msgid "Right click and save link to download the mp3"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:208
+msgid "Share on facebook"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:211
+msgid "Share on twitter"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:215
+msgid "close"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:222
+msgid "share"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:280
+msgid ""
+"This playlist does not exist or is empty. Please double check the playlist "
+"ID and be sure you have uploaded songs."
+msgstr ""
+
+#: ../wolf-jplayer-show.php:282
+msgid "This playlist does not exist or is empty."
+msgstr ""
+
+#: ../wolf-jplayer-show.php:345
+msgid "Display a playlist"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:408 ../wolf-jplayer-songs.php:60
+msgid "Title"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:412
+msgid "Optional Text"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:417
+msgid "Playlist"
+msgstr ""
+
+#: ../wolf-jplayer-show.php:426
+msgid "No playlist yet."
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:54
+msgid "Songs"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:61 ../inc/song-functions.php:55
+msgid "Artist"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:62
+msgid "Song"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:63
+msgid "Artwork"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:64
+msgid "Free Download"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:65
+msgid "Buy URL"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:78
+msgid "Edit the title"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:83
+msgid "Upload an artwork for your song"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:83
+msgid "Add an artwork"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:87
+msgid "Add links where visitors can purchase your song"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:87
+msgid "Add an buy links"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:91
+msgid "Edit"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:92
+msgid "Are you sure to want to delete this  song ?"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:92
+msgid "Delete"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:100
+msgid "Action"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:101
+msgid "Delete selected songs"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:106
+msgid "No songs uploaded in this  playlist yet."
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:111
+msgid "Your server infos"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:115
+#, php-format
+msgid ""
+"<a href=\"%s\" target=\"_blank\">How to Increase your Upload Size Limit</a>"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:117
+msgid ""
+"Your upload size limit seems a but low. Here is a tip to increase your "
+"upload limit"
+msgstr ""
+
+#: ../wolf-jplayer-songs.php:134
+msgid "Are you sure to want to delete these songs?"
+msgstr ""
+
+#: ../wolf-jplayer.php:147
+msgid "Wolf jPlayer"
+msgstr ""
+
+#: ../wolf-jplayer.php:149
+msgid "Manage playlists"
+msgstr ""
+
+#: ../wolf-jplayer.php:150
+msgid "Options"
+msgstr ""
+
+#: ../wolf-jplayer.php:208
+msgid "Main Color Tone"
+msgstr ""
+
+#: ../wolf-jplayer.php:209
+msgid "Text and Icons Color"
+msgstr ""
+
+#: ../wolf-jplayer.php:252
+msgid "Player Color Settings"
+msgstr ""
+
+#: ../wolf-jplayer.php:255
+msgid "Settings saved."
+msgstr ""
+
+#: ../wolf-jplayer.php:262
+msgid "Save Changes"
+msgstr ""
+
+#: ../inc/functions.php:50
+msgid "Hide permanently"
+msgstr ""
+
+#: ../inc/playlist-functions.php:14
+msgid "Create"
+msgstr ""
+
+#: ../inc/playlist-functions.php:23 ../inc/song-functions.php:39
+msgid "Save changes"
+msgstr ""
+
+#: ../inc/playlist-functions.php:27
+msgid "Create a new playlist"
+msgstr ""
+
+#: ../inc/playlist-functions.php:28 ../inc/song-functions.php:45
+msgid "Fields marked with * are required"
+msgstr ""
+
+#: ../inc/playlist-functions.php:30
+msgid "Update your playlist name"
+msgstr ""
+
+#: ../inc/playlist-functions.php:35
+msgid "Playlist name"
+msgstr ""
+
+#: ../inc/playlist-functions.php:42 ../inc/song-functions.php:76
+msgid "Choose an image"
+msgstr ""
+
+#: ../inc/playlist-functions.php:43 ../inc/song-functions.php:77
+msgid "Clear"
+msgstr ""
+
+#: ../inc/playlist-functions.php:45
+msgid "Autoplay (not recommended)"
+msgstr ""
+
+#: ../inc/playlist-functions.php:54
+msgid "Uploading, please wait."
+msgstr ""
+
+#: ../inc/playlist-functions.php:88
+msgid "The playlist name can not be empty."
+msgstr ""
+
+#: ../inc/playlist-functions.php:117
+msgid "Your playlist has been created succesfully."
+msgstr ""
+
+#: ../inc/playlist-functions.php:129
+msgid "Your playlist has been updated."
+msgstr ""
+
+#: ../inc/playlist-functions.php:137
+msgid "Unknow error occured, please try again later"
+msgstr ""
+
+#: ../inc/playlist-functions.php:162
+msgid "Playlist deleted"
+msgstr ""
+
+#: ../inc/playlist-functions.php:166
+msgid "The playlist you are trying to delete does not exist."
+msgstr ""
+
+#: ../inc/song-functions.php:23
+msgid "Submit"
+msgstr ""
+
+#: ../inc/song-functions.php:44
+#, php-format
+msgid "Upload a new song in \"%s\" playlist"
+msgstr ""
+
+#: ../inc/song-functions.php:47
+msgid "Update your song"
+msgstr ""
+
+#: ../inc/song-functions.php:51
+msgid "Song title"
+msgstr ""
+
+#: ../inc/song-functions.php:61
+msgid "Mp3 URL"
+msgstr ""
+
+#: ../inc/song-functions.php:62
+msgid "(Enter an URL or choose a song from the media library)"
+msgstr ""
+
+#: ../inc/song-functions.php:65
+msgid "Choose a song"
+msgstr ""
+
+#: ../inc/song-functions.php:73
+msgid "Artwork (jpg or png)"
+msgstr ""
+
+#: ../inc/song-functions.php:81
+msgid "Itunes URL"
+msgstr ""
+
+#: ../inc/song-functions.php:86
+msgid "Amazon URL"
+msgstr ""
+
+#: ../inc/song-functions.php:91
+msgid "Other \"buy\" URL"
+msgstr ""
+
+#: ../inc/song-functions.php:95
+msgid "Free download"
+msgstr ""
+
+#: ../inc/song-functions.php:97
+msgid "Will overwrite the \"buy\" URLs above"
+msgstr ""
+
+#: ../inc/song-functions.php:107
+msgid "Please wait..."
+msgstr ""
+
+#: ../inc/song-functions.php:114
+msgid "back to the \"add a song\" form"
+msgstr ""
+
+#: ../inc/song-functions.php:117
+msgid "back to the playlist manager"
+msgstr ""
+
+#: ../inc/song-functions.php:145
+msgid "Songs deleted"
+msgstr ""
+
+#: ../inc/song-functions.php:148
+msgid "No songs selected"
+msgstr ""
+
+#: ../inc/song-functions.php:163
+msgid "Song deleted"
+msgstr ""
+
+#: ../inc/song-functions.php:177
+msgid "Song title can not be empty."
+msgstr ""
+
+#: ../inc/song-functions.php:184
+msgid "Please fill an mp3 URL."
+msgstr ""
+
+#: ../inc/song-functions.php:243
+msgid "Your song has been added to your playlist."
+msgstr ""
+
+#: ../inc/song-functions.php:246
+msgid "Your song could not be added to your database."
+msgstr ""
+
+#: ../inc/song-functions.php:273
+msgid "Your song has been updated."
+msgstr ""
