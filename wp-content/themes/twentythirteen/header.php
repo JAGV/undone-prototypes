@@ -46,6 +46,7 @@
 					<?php get_search_form(); ?>
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
+			
 		</header><!-- #masthead -->
 
 		<div id="main" class="site-main">
