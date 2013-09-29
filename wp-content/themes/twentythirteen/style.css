@@ -922,7 +922,7 @@ ul.nav-menu li:hover > ul,
 
 /* Navbar */
 .navbar {
-	background-color: #f7f5e7;
+	background-color: rgb(240, 240, 240);
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
